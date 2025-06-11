@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Chat from "./Components/Chat.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className="app-bg">
+      <header className="app-header enhanced-header">
+        <div className="header-glow" />
+        <h1>GymAI Chat</h1>
+        <p className="app-subtitle">
+          Asisten Gym & Fitness Berbasis AI
+          <br />
+          <span className="subtitle-highlight">
+            Tanya apa saja tentang nutrisi, fitness, dan jadwal latihan!
+          </span>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <Chat />
     </div>
   );
 }
