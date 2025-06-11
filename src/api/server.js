@@ -2,7 +2,6 @@ import axios from "axios";
 
 export const callGeminiAPI = async (messages) => {
   const GEMINI_API = process.env.REACT_APP_GEMINI_API;
-  console.log("GEMINI_API:", GEMINI_API);
   try {
     const formattedPrompt =
       `Kamu adalah asisten virtual yang hanya menjawab pertanyaan tentang
